@@ -21,6 +21,7 @@
   "homepage": "https://github.com/KAC-8/KAC-8.github.io#readme",
   "dependencies": {
     "ejs": "^3.1.10",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "express-rate-limit": "^6.11.2"
   }
 }

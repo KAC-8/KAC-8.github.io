@@ -1,5 +1,6 @@
 const path = require("path");
 const express = require("express");
+const rateLimit = require("express-rate-limit");
 
 const app = express();
 const rootDir = __dirname;
@@ -7,6 +8,15 @@ const PORT = process.env.PORT || 3000;
 
 app.set("view engine", "ejs");
 app.set("views", path.join(rootDir, "views"));
+
+const limiter = rateLimit({
+  windowMs: 60 * 1000,
+  max: 120,
+  standardHeaders: true,
+  legacyHeaders: false,
+});
+
+app.use(limiter);
 
 app.use(
   "/assets",
