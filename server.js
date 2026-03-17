@@ -6,9 +6,6 @@ const app = express();
 const rootDir = __dirname;
 const PORT = process.env.PORT || 3000;
 
-app.set("view engine", "ejs");
-app.set("views", path.join(rootDir, "views"));
-
 const limiter = rateLimit({
   windowMs: 60 * 1000,
   max: 120,
@@ -40,11 +37,11 @@ app.get("/placeholder.svg", (req, res) => {
 });
 
 app.get("/terms", (req, res) => {
-  res.render("terms");
+  res.sendFile(path.join(rootDir, "terms.html"));
 });
 
 app.get("/privacy", (req, res) => {
-  res.render("privacy");
+  res.sendFile(path.join(rootDir, "privacy.html"));
 });
 
 app.listen(PORT, () => {
