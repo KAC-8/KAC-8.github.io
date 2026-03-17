@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en" data-language="both">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KAC8 Bot | Privacy Policy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Readex+Pro:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #0b0f13;
+        --panel: #111722;
+        --panel-2: #0f141d;
+        --text: #e8f0e8;
+        --muted: #b4c2b4;
+        --accent: #2e6417;
+        --accent-soft: rgba(46, 100, 23, 0.14);
+        --border: rgba(255, 255, 255, 0.08);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: radial-gradient(circle at 20% 20%, rgba(46, 100, 23, 0.08), transparent 30%),
+          radial-gradient(circle at 80% 0%, rgba(46, 100, 23, 0.08), transparent 35%),
+          var(--bg);
+        color: var(--text);
+        font-family: "Readex Pro", "Inter", system-ui, -apple-system, sans-serif;
+        letter-spacing: 0.01em;
+      }
+      header {
+        padding: 48px 24px 16px;
+      }
+      .shell {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 18px 48px;
+      }
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: var(--text);
+        font-weight: 600;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+      .title {
+        margin: 12px 0 8px;
+        font-size: clamp(32px, 4vw, 42px);
+        font-weight: 700;
+      }
+      .subtitle {
+        margin: 0;
+        color: var(--muted);
+        max-width: 760px;
+        line-height: 1.6;
+      }
+      .panel {
+        background: linear-gradient(145deg, var(--panel), var(--panel-2));
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 18px;
+        box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+      }
+      .toggles {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin: 24px 0 12px;
+        flex-wrap: wrap;
+      }
+      .toggles .label {
+        font-weight: 600;
+        color: var(--muted);
+      }
+      .pill-group {
+        display: inline-flex;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        padding: 4px;
+        gap: 6px;
+      }
+      .pill-group button {
+        border: none;
+        background: transparent;
+        color: var(--muted);
+        padding: 8px 14px;
+        border-radius: 999px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.18s ease;
+      }
+      .pill-group button.active {
+        background: var(--accent);
+        color: #fff;
+        box-shadow: 0 0 0 6px var(--accent-soft);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 16px;
+        margin-top: 12px;
+      }
+      .card {
+        padding: 16px;
+        border-radius: 14px;
+        border: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.02);
+        backdrop-filter: blur(4px);
+      }
+      .card h3 {
+        margin: 0 0 8px;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 4px 10px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 700;
+        background: var(--accent-soft);
+        color: #d9f7d9;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+      ul {
+        padding-left: 18px;
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+      .lang-section {
+        margin-top: 14px;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.015);
+        padding: 18px;
+      }
+      .lang-section h2 {
+        margin: 0 0 4px;
+        font-size: 22px;
+      }
+      .lang-section .lead {
+        margin: 0 0 14px;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+      .meta {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+      .meta span {
+        font-family: "JetBrains Mono", monospace;
+        font-size: 12px;
+        color: var(--muted);
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 6px 10px;
+      }
+      footer {
+        border-top: 1px solid var(--border);
+        margin-top: 28px;
+        padding-top: 18px;
+        color: var(--muted);
+        text-align: center;
+        font-weight: 600;
+      }
+      [data-language="english"] .lang-section.arabic,
+      [data-language="arabic"] .lang-section.english {
+        display: none;
+      }
+      .rtl {
+        direction: rtl;
+        text-align: right;
+        font-family: "Readex Pro", "Cairo", system-ui, sans-serif;
+      }
+      a {
+        color: #9ee7a4;
+        text-decoration: none;
+        border-bottom: 1px dashed rgba(158, 231, 164, 0.4);
+      }
+      @media (max-width: 640px) {
+        header {
+          padding-top: 32px;
+        }
+        .title {
+          font-size: 30px;
+        }
+        .panel {
+          padding: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="shell">
+      <div class="badge">KAC8 Bot — Privacy Policy</div>
+      <h1 class="title">Privacy-first in obsidian dark with emerald assurance.</h1>
+      <p class="subtitle">
+        This Privacy Policy explains what data KAC8 collects, how it is used to deliver leveling and
+        server settings, and the safeguards applied inside our MongoDB-backed infrastructure.
+      </p>
+      <div class="meta">
+        <span>Last updated: March 17, 2026</span>
+        <span>Data store: MongoDB with encryption-at-rest</span>
+      </div>
+      <div class="toggles">
+        <span class="label">Language view</span>
+        <div class="pill-group">
+          <button type="button" data-language="english">English</button>
+          <button type="button" data-language="arabic">العربية</button>
+          <button type="button" data-language="both" class="active">Both</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="shell">
+      <section class="panel lang-section english">
+        <div class="chip">English</div>
+        <h2>Privacy Policy — English</h2>
+        <p class="lead">
+          We collect only the data needed to operate KAC8 features on Discord. By inviting or using
+          the bot, you consent to this Privacy Policy and Discord's data rules.
+        </p>
+
+        <div class="grid">
+          <div class="card">
+            <h3><span class="chip">Data Collection</span></h3>
+            <ul>
+              <li>User and Guild IDs: captured to identify servers, members, and permissions.</li>
+              <li>Profile metadata: usernames, avatars, and roles as exposed by Discord for display and eligibility.</li>
+              <li>Interaction logs: command triggers, cooldowns, and moderation actions for audit and abuse prevention.</li>
+              <li>Configuration: leveling settings, automations, language preferences, and feature toggles you set.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3><span class="chip">Data Usage</span></h3>
+            <ul>
+              <li>Deliver leveling, achievements, and dashboards tailored to your server's stored settings.</li>
+              <li>Calculate XP and ranks using stored IDs; no message content is stored for leveling.</li>
+              <li>Honor server preferences for localization, moderation thresholds, and notification styles.</li>
+              <li>Security and reliability: logs help detect spam, raiding, and platform abuse.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3><span class="chip">Data Security</span></h3>
+            <ul>
+              <li>Data is stored in MongoDB with encryption at rest; connections use TLS in transit.</li>
+              <li>Access to databases and dashboards is restricted to authorized KAC8 operators.</li>
+              <li>Backups are encrypted and retained only for continuity; old backups are purged on schedule.</li>
+              <li>We respond promptly to deletion requests for server configurations or user data where feasible.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top: 14px;">
+          <h3><span class="chip">Retention &amp; Control</span></h3>
+          <ul>
+            <li>Server settings are retained while KAC8 remains in your server; removal triggers cleanup.</li>
+            <li>Basic logs are kept temporarily for diagnostics and anti-abuse, then anonymized or deleted.</li>
+            <li>Submit requests to view or erase data through the dashboard or the official KAC8 Discord contact.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="panel lang-section arabic rtl">
+        <div class="chip">العربية</div>
+        <h2>سياسة الخصوصية — العربية</h2>
+        <p class="lead">
+          نجمع فقط البيانات اللازمة لتشغيل ميزات KAC8 على ديسكورد. بدعوة البوت أو استخدامه،
+          فإنك توافق على سياسة الخصوصية هذه وعلى قواعد بيانات ديسكورد.
+        </p>
+
+        <div class="grid">
+          <div class="card">
+            <h3><span class="chip">جمع البيانات</span></h3>
+            <ul>
+              <li>معرفات المستخدم والخادم: لحفظ هوية الخوادم والأعضاء والصلاحيات.</li>
+              <li>بيانات العرض: الأسماء والصور والأدوار المتاحة من ديسكورد لعرضها واختيار الصلاحيات.</li>
+              <li>سجلات التفاعل: استدعاء الأوامر، أزمنة الانتظار، وإجراءات الضبط للتدقيق ومنع الإساءة.</li>
+              <li>الإعدادات: تهيئة مستويات الخبرة، الأتمتة، تفضيلات اللغة، وخيارات الميزات التي تحددها.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3><span class="chip">استخدام البيانات</span></h3>
+            <ul>
+              <li>تقديم نظام المستويات والإنجازات واللوحات بناءً على إعدادات خادمك المخزنة.</li>
+              <li>حساب الخبرة والترتيب باستخدام المعرفات فقط؛ لا يتم تخزين محتوى الرسائل لأغراض المستوى.</li>
+              <li>الالتزام بتفضيلات الخادم للغة وضوابط الإشراف وأنماط التنبيه.</li>
+              <li>الأمان والموثوقية: تساعد السجلات في اكتشاف السبام أو الغارات أو إساءة استخدام المنصة.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3><span class="chip">أمان البيانات</span></h3>
+            <ul>
+              <li>يتم تخزين البيانات في MongoDB مع تشفير أثناء السكون، وتُؤمَّن الاتصالات عبر TLS أثناء النقل.</li>
+              <li>يقتصر الوصول إلى قواعد البيانات واللوحات على مشغلي KAC8 المصرح لهم فقط.</li>
+              <li>يتم تشفير النسخ الاحتياطية والاحتفاظ بها لضمان الاستمرارية، ويتم حذف النسخ القديمة بانتظام.</li>
+              <li>نستجيب بسرعة لطلبات الحذف لإعدادات الخادم أو بيانات المستخدم متى أمكن ذلك.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top: 14px;">
+          <h3><span class="chip">الاحتفاظ والتحكم</span></h3>
+          <ul>
+            <li>يتم الاحتفاظ بإعدادات الخادم طالما أن KAC8 موجود في خادمك؛ الإزالة تؤدي إلى التنظيف.</li>
+            <li>يتم الاحتفاظ بالسجلات الأساسية مؤقتًا لأغراض التشخيص ومكافحة الإساءة ثم تُزال أو تُنزع الهوية.</li>
+            <li>يمكنك طلب عرض البيانات أو حذفها عبر لوحة التحكم أو التواصل مع فريق KAC8 على ديسكورد.</li>
+          </ul>
+        </div>
+      </section>
+
+      <footer>© 2026 KAC8 | Secured by KAC8 Empire</footer>
+    </main>
+
+    <script>
+      const buttons = document.querySelectorAll(".pill-group button");
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          buttons.forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+          document.documentElement.setAttribute("data-language", btn.dataset.language);
+        });
+      });
+    </script>
+  </body>
+</html>
