@@ -1,0 +1,26 @@
+{
+  "name": "kac-8.github.io",
+  "version": "1.0.0",
+  "description": "KAC8 Dashboard landing content and legal pages",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"No tests specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KAC-8/KAC-8.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/KAC-8/KAC-8.github.io/issues"
+  },
+  "homepage": "https://github.com/KAC-8/KAC-8.github.io#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  }
+}
