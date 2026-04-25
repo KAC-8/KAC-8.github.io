@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Warm Forest Tech Design System */
+
+@layer base {
+  :root {
+    /* Light Mode - Soft Cream with Sage */
+    --background: 40 20% 98%;
+    --foreground: 120 10% 15%;
+
+    --card: 40 15% 96%;
+    --card-foreground: 120 10% 15%;
+
+    --popover: 40 15% 96%;
+    --popover-foreground: 120 10% 15%;
+
+    --primary: 122 39% 34%;
+    --primary-foreground: 40 20% 98%;
+
+    --secondary: 100 20% 90%;
+    --secondary-foreground: 120 10% 20%;
+
+    --muted: 100 15% 92%;
+    --muted-foreground: 120 8% 45%;
+
+    --accent: 100 25% 85%;
+    --accent-foreground: 122 39% 25%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 100 15% 88%;
+    --input: 100 15% 88%;
+    --ring: 122 39% 34%;
+
+    --radius: 0.75rem;
+
+    /* Custom Forest Variables */
+    --forest: 122 39% 34%;
+    --forest-glow: 122 50% 45%;
+    --sage: 100 25% 70%;
+    --sage-light: 100 20% 85%;
+    --cream: 40 20% 98%;
+    
+    --glass-bg: 40 20% 98% / 0.7;
+    --glass-border: 100 15% 88% / 0.5;
+    --glow-forest: 0 0 30px hsl(122 50% 45% / 0.3);
+  }
+
+  .dark {
+    /* Dark Mode - Deep Forest */
+    --background: 0 0% 7%;
+    --foreground: 40 15% 92%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 40 15% 92%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 40 15% 92%;
+
+    --primary: 122 39% 34%;
+    --primary-foreground: 40 20% 98%;
+
+    --secondary: 120 10% 15%;
+    --secondary-foreground: 40 15% 85%;
+
+    --muted: 0 0% 14%;
+    --muted-foreground: 40 10% 60%;
+
+    --accent: 120 15% 18%;
+    --accent-foreground: 122 39% 50%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 122 39% 40%;
+
+    /* Custom Forest Variables - Dark */
+    --forest: 122 39% 34%;
+    --forest-glow: 122 50% 50%;
+    --sage: 100 20% 35%;
+    --sage-light: 100 15% 25%;
+    --cream: 40 15% 92%;
+    
+    --glass-bg: 0 0% 12% / 0.8;
+    --glass-border: 0 0% 25% / 0.3;
+    --glow-forest: 0 0 40px hsl(122 50% 40% / 0.4);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  html[dir="rtl"] body {
+    font-family: 'Readex Pro', sans-serif;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply backdrop-blur-xl border;
+    background: hsl(var(--glass-bg));
+    border-color: hsl(var(--glass-border));
+  }
+
+  .glow-text {
+    text-shadow: var(--glow-forest);
+  }
+
+  .glow-box {
+    box-shadow: var(--glow-forest);
+  }
+
+  .forest-gradient {
+    background: linear-gradient(135deg, hsl(var(--forest)) 0%, hsl(var(--sage)) 100%);
+  }
+
+  .text-gradient-forest {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--forest-glow)) 0%, hsl(var(--sage)) 100%);
+  }
+}
+
+@layer utilities {
+  .font-arabic {
+    font-family: 'Readex Pro', sans-serif;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
