@@ -22,19 +22,12 @@ export default defineConfig(({ mode }) => ({
     chunkSizeWarningLimit: 800,
     rollupOptions: {
       output: {
-        manualChunks(id) {
-          if (!id.includes("node_modules")) return;
-          if (id.includes("react-router")) return "router";
-          if (id.includes("@tanstack")) return "query";
-          if (id.includes("@supabase")) return "supabase";
-          if (id.includes("framer-motion") || id.includes("motion-")) return "motion";
-          if (id.includes("lucide-react")) return "icons";
-          if (id.includes("@radix-ui")) return "radix";
-          if (id.includes("qrcode.react") || id.includes("qrcode")) return "qrcode";
-          if (id.includes("react-markdown") || id.includes("remark-") || id.includes("micromark") || id.includes("mdast-") || id.includes("unist-") || id.includes("hast-")) return "markdown";
-          if (id.includes("recharts") || id.includes("d3-")) return "charts";
-          if (id.includes("react-dom") || id.includes("scheduler") || id.includes("/react/")) return "react";
-          return "vendor";
+        manualChunks: {
+          react: ["react", "react-dom", "react-router-dom", "react-router"],
+          supabase: ["@supabase/supabase-js"],
+          motion: ["framer-motion"],
+          icons: ["lucide-react"],
+          query: ["@tanstack/react-query"],
         },
       },
     },
