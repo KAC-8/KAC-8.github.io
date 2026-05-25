@@ -13,7 +13,7 @@ const Footer = () => {
     { icon: Music2, href: 'https://www.tiktok.com/@k.70.x', label: 'TikTok' },
     { icon: Instagram, href: 'https://www.instagram.com/kacx_8/', label: 'Instagram' },
     { icon: Twitter, href: 'https://x.com/kac8_8', label: 'X (Twitter)' },
-    { icon: Mail, href: 'mailto:ka0530959@gmail.com', label: 'Email' },
+    { icon: Mail, href: 'mailto:support@kac8.me', label: 'Email' },
   ];
 
   return (

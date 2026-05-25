@@ -12,7 +12,7 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const socialLinks = [
-    { icon: Mail, label: 'Email', href: 'mailto:ka0530959@gmail.com', color: 'hover:text-red-500' },
+    { icon: Mail, label: 'Email', href: 'mailto:support@kac8.me', color: 'hover:text-red-500' },
     { icon: MessageCircle, label: 'Discord', href: 'https://discord.gg/vuBfJJKzVF', color: 'hover:text-indigo-500' },
     { icon: Github, label: 'GitHub', href: 'https://github.com/KAC-8', color: 'hover:text-foreground' },
     { icon: Youtube, label: 'YouTube', href: 'https://www.youtube.com/@KAC8-YT', color: 'hover:text-red-600' },
@@ -156,7 +156,7 @@ const Contact = () => {
 
             {/* Quick Email */}
             <motion.a
-              href="mailto:ka0530959@gmail.com"
+              href="mailto:support@kac8.me"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
@@ -167,7 +167,7 @@ const Contact = () => {
               <p className="text-lg font-medium mb-1">
                 {isRTL ? 'أو راسلني مباشرة' : 'Or email me directly'}
               </p>
-              <p className="text-primary font-mono">ka0530959@gmail.com</p>
+              <p className="text-primary font-mono">support@kac8.me</p>
             </motion.a>
           </motion.div>
         </div>
