@@ -8,9 +8,6 @@
     {
       "source": "/privacy",
       "destination": "/privacy.html"
-    },
-    {
-      "source": "/((?!terms|privacy).*)"
     }
   ]
 }
