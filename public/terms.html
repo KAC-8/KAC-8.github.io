@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en" data-language="both">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KAC8 Bot | Terms of Service</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Readex+Pro:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #0b0f13;
+        --panel: #111722;
+        --panel-2: #0f141d;
+        --text: #e8f0e8;
+        --muted: #b4c2b4;
+        --accent: #2e6417;
+        --accent-soft: rgba(46, 100, 23, 0.14);
+        --border: rgba(255, 255, 255, 0.08);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: radial-gradient(circle at 20% 20%, rgba(46, 100, 23, 0.08), transparent 30%),
+          radial-gradient(circle at 80% 0%, rgba(46, 100, 23, 0.08), transparent 35%),
+          var(--bg);
+        color: var(--text);
+        font-family: "Readex Pro", "Inter", system-ui, -apple-system, sans-serif;
+        letter-spacing: 0.01em;
+      }
+      header {
+        padding: 48px 24px 16px;
+      }
+      .shell {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 18px 48px;
+      }
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: var(--text);
+        font-weight: 600;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+      .title {
+        margin: 12px 0 8px;
+        font-size: clamp(32px, 4vw, 42px);
+        font-weight: 700;
+      }
+      .subtitle {
+        margin: 0;
+        color: var(--muted);
+        max-width: 760px;
+        line-height: 1.6;
+      }
+      .panel {
+        background: linear-gradient(145deg, var(--panel), var(--panel-2));
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 18px;
+        box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+      }
+      .toggles {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin: 24px 0 12px;
+        flex-wrap: wrap;
+      }
+      .toggles .label {
+        font-weight: 600;
+        color: var(--muted);
+      }
+      .pill-group {
+        display: inline-flex;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        padding: 4px;
+        gap: 6px;
+      }
+      .pill-group button {
+        border: none;
+        background: transparent;
+        color: var(--muted);
+        padding: 8px 14px;
+        border-radius: 999px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.18s ease;
+      }
+      .pill-group button.active {
+        background: var(--accent);
+        color: #fff;
+        box-shadow: 0 0 0 6px var(--accent-soft);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 16px;
+        margin-top: 12px;
+      }
+      .card {
+        padding: 16px;
+        border-radius: 14px;
+        border: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.02);
+        backdrop-filter: blur(4px);
+      }
+      .card h3 {
+        margin: 0 0 8px;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 4px 10px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 700;
+        background: var(--accent-soft);
+        color: #d9f7d9;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+      ul {
+        padding-left: 18px;
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+      .lang-section {
+        margin-top: 14px;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.015);
+        padding: 18px;
+      }
+      .lang-section h2 {
+        margin: 0 0 4px;
+        font-size: 22px;
+      }
+      .lang-section .lead {
+        margin: 0 0 14px;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+      .meta {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+      .meta span {
+        font-family: "JetBrains Mono", monospace;
+        font-size: 12px;
+        color: var(--muted);
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 6px 10px;
+      }
+      footer {
+        border-top: 1px solid var(--border);
+        margin-top: 28px;
+        padding-top: 18px;
+        color: var(--muted);
+        text-align: center;
+        font-weight: 600;
+      }
+      [data-language="english"] .lang-section.arabic,
+      [data-language="arabic"] .lang-section.english {
+        display: none;
+      }
+      .rtl {
+        direction: rtl;
+        text-align: right;
+        font-family: "Readex Pro", "Cairo", system-ui, sans-serif;
+      }
+      a {
+        color: #9ee7a4;
+        text-decoration: none;
+        border-bottom: 1px dashed rgba(158, 231, 164, 0.4);
+      }
+      @media (max-width: 640px) {
+        header {
+          padding-top: 32px;
+        }
+        .title {
+          font-size: 30px;
+        }
+        .panel {
+          padding: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="shell">
+      <div class="badge">KAC8 Bot — Terms of Service</div>
+      <h1 class="title">Obsidian-dark policy with Emerald discipline.</h1>
+      <p class="subtitle">
+        These Terms of Service govern how you interact with the KAC8 Discord bot and dashboard.
+        By continuing, you confirm responsible usage, zero tolerance for spam/raids, and acknowledge
+        the rights of KAC8 to protect the service and its community.
+      </p>
+      <div class="meta">
+        <span>Last updated: March 17, 2026</span>
+        <span>Applies to: Discord servers using KAC8</span>
+      </div>
+      <div class="toggles">
+        <span class="label">Language view</span>
+        <div class="pill-group">
+          <button type="button" data-language="english">English</button>
+          <button type="button" data-language="arabic">العربية</button>
+          <button type="button" data-language="both" class="active">Both</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="shell">
+      <section class="panel lang-section english">
+        <div class="chip">English</div>
+        <h2>Terms of Service — English</h2>
+        <p class="lead">
+          The KAC8 bot is provided to assist Discord communities. Using the bot means you accept
+          these Terms and agree to Discord's Terms of Service and Community Guidelines.
+        </p>
+
+        <div class="grid">
+          <div class="card">
+            <h3><span class="chip">Bot Usage</span></h3>
+            <ul>
+              <li>You must have the authority to manage the Discord server where KAC8 is invited.</li>
+              <li>Use commands responsibly; automated or excessive triggering that harms stability is prohibited.</li>
+              <li>Respect Discord rate limits and privacy expectations for all members.</li>
+              <li>Configuration and moderation actions taken with KAC8 are your responsibility.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3><span class="chip">Prohibited Acts</span></h3>
+            <ul>
+              <li>No spam, raid coordination, or mass mentions using KAC8 commands or automations.</li>
+              <li>No harassment, hateful content, or attempts to bypass server security or Discord rules.</li>
+              <li>No scraping, resale, or misuse of collected data or configuration exports.</li>
+              <li>No exploiting vulnerabilities, reverse-engineering, or interfering with KAC8 infrastructure.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3><span class="chip">KAC8 Rights</span></h3>
+            <ul>
+              <li>KAC8 may suspend or terminate access for any server or user violating these Terms.</li>
+              <li>KAC8 may log command usage for security, abuse prevention, and uptime monitoring.</li>
+              <li>Features, limits, and policies may change with notice posted via the dashboard or bot.</li>
+              <li>We may cooperate with Discord Trust &amp; Safety when required to prevent harm.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top: 14px;">
+          <h3><span class="chip">Liability &amp; Contact</span></h3>
+          <ul>
+            <li>The service is provided “as is” without warranties. Outages or data loss are not guaranteed against.</li>
+            <li>You agree to hold KAC8 harmless from misuse of the bot by you or your server members.</li>
+            <li>For concerns or removal, contact the KAC8 team via the dashboard or official Discord channels.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="panel lang-section arabic rtl">
+        <div class="chip">العربية</div>
+        <h2>شروط الخدمة — العربية</h2>
+        <p class="lead">
+          يتم توفير بوت KAC8 لدعم مجتمعات ديسكورد. استخدامك للبوت يعني قبولك لهذه الشروط
+          والالتزام بشروط خدمة ديسكورد وإرشادات المجتمع.
+        </p>
+
+        <div class="grid">
+          <div class="card">
+            <h3><span class="chip">استخدام البوت</span></h3>
+            <ul>
+              <li>يجب أن تمتلك الصلاحية لإدارة الخادم الذي تتم دعوة KAC8 إليه.</li>
+              <li>استخدم الأوامر بمسؤولية؛ يمنع التشغيل المفرط أو الآلي الذي يضر بالاستقرار.</li>
+              <li>احترم حدود ديسكورد وتوقعات الخصوصية لجميع الأعضاء.</li>
+              <li>أنت مسؤول عن أي إعدادات أو إجراءات ضبط تتم عبر KAC8.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3><span class="chip">الأفعال المحظورة</span></h3>
+            <ul>
+              <li>يُمنع استخدام الأوامر في السبام أو تنظيم الغارات أو الإشعارات الجماعية.</li>
+              <li>يُمنع التنمر أو المحتوى الكراهية أو محاولة تجاوز الأمان أو قواعد ديسكورد.</li>
+              <li>يُمنع جمع البيانات أو إعادة بيعها أو إساءة استخدام الإعدادات أو النسخ الاحتياطية.</li>
+              <li>يُمنع استغلال الثغرات أو الهندسة العكسية أو التدخل في بنية KAC8.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3><span class="chip">حقوق KAC8</span></h3>
+            <ul>
+              <li>يجوز لـ KAC8 تعليق أو إنهاء الوصول لأي مستخدم أو خادم يخالف هذه الشروط.</li>
+              <li>قد يتم تسجيل استخدام الأوامر لأغراض الأمان ومنع الإساءة ومراقبة التوفر.</li>
+              <li>قد تتغير الميزات أو الحدود أو السياسات مع إشعار عبر لوحة التحكم أو البوت.</li>
+              <li>قد نتعاون مع فريق الثقة والسلامة في ديسكورد عند الحاجة لمنع الضرر.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top: 14px;">
+          <h3><span class="chip">المسؤولية والتواصل</span></h3>
+          <ul>
+            <li>الخدمة مقدمة كما هي بدون ضمانات، ولا نضمن منع الانقطاعات أو فقدان البيانات.</li>
+            <li>أنت توافق على إبراء ذمة KAC8 من أي سوء استخدام للبوت من قبلك أو من قبل أعضاء خادمك.</li>
+            <li>للاستفسارات أو طلب الإزالة، تواصل مع فريق KAC8 عبر اللوحة أو قنوات ديسكورد الرسمية.</li>
+          </ul>
+        </div>
+      </section>
+
+      <footer>© 2026 KAC8 | Secured by KAC8 Empire</footer>
+    </main>
+
+    <script>
+      const buttons = document.querySelectorAll(".pill-group button");
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          buttons.forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+          document.documentElement.setAttribute("data-language", btn.dataset.language);
+        });
+      });
+    </script>
+  </body>
+</html>
